@@ -10,6 +10,6 @@ import org.warnier.zhang.cip.util.StringUtils;
 public class TestController {
     @GetMapping("/md5")
     public String encryptText(String text) {
-        return "MD5: " + StringUtils.md5(text);
+        return StringUtils.md5(text);
     }
 }
